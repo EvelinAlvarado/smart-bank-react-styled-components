@@ -1,7 +1,13 @@
 import { useState } from "react";
+import styled from "styled-components";
+import { Icon } from "../UI";
 import privateImg from "../../assets/images/privateImg.svg";
 import eye from "../../assets/images/eye.svg";
 import money from "../../assets/images/money.svg";
+
+const IconMargin = styled(Icon)`
+  margin-top: 2px;
+`;
 
 export const Account = () => {
   const [toggleState, untoggle] = useState(true);
@@ -16,7 +22,7 @@ export const Account = () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Available Balance
         <span>
-          <img className="image-icon" src={money} alt="Balance icon" />
+          <Icon src={money} alt="Balance icon" />
         </span>
         {toggleState ? (
           <div className="balance">
@@ -26,9 +32,8 @@ export const Account = () => {
       </div>
 
       <button className="btn" onClick={toggleHandler}>
-        <img
-          style={{ marginTop: "2px" }}
-          className="image-icon"
+        <IconMargin
+          /* style={{ marginTop: "2px" }} */
           src={toggleState ? privateImg : eye}
           alt="Balance Privacy"
         />
