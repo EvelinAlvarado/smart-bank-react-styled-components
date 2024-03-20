@@ -23,7 +23,8 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: ${({ theme }) => theme.inside};
+  color: ${({ theme }) => theme.text};
   border-radius: 5px;
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
   padding: 20px;
@@ -42,4 +43,13 @@ export const Balance = styled.div`
 export const Details = styled.span`
   color: ${primaryColor};
   font-size: 24px;
+`;
+
+export const BtnTheme = styled.div`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 `;
