@@ -1,4 +1,4 @@
-import { Icon } from "./Components/UI";
+import { ThemeIcon } from "./Components/UI";
 import food from "./assets/images/food.svg";
 import health from "./assets/images/health.svg";
 import transportation from "./assets/images/transportation.svg";
@@ -6,16 +6,16 @@ import others from "./assets/images/others.svg";
 import utilities from "./assets/images/utilities.svg";
 
 export const ImageFilter = (type) => {
-  console.log(type);
+  // console.log(type);
   const Images = {
-    Food: <Icon src={food} alt="Food icon"></Icon>,
-    Health: <Icon src={health} alt="Health icon"></Icon>,
+    Food: <ThemeIcon src={food} alt="Food icon" />,
+    Health: <ThemeIcon src={health} alt="Health icon" />,
     Transportation: (
-      <Icon src={transportation} alt="Transportation icon"></Icon>
+      <ThemeIcon src={transportation} alt="Transportation icon" />
     ),
-    Others: <Icon src={others} alt="Others icon"></Icon>,
-    Utilities: <Icon src={utilities} alt="Utilities icon"></Icon>,
-    default: <Icon src={others} alt="Others icon"></Icon>,
+    Others: <ThemeIcon src={others} alt="Others icon" />,
+    Utilities: <ThemeIcon src={utilities} alt="Utilities icon" />,
+    default: <ThemeIcon src={others} alt="Others icon" />,
   };
 
   return Images[type] || Images["default"];

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Icon, Btn, Box, Balance, Details } from "../UI";
+import { Icon, ThemeIcon, Btn, Box, Balance, Details } from "../UI";
 import privateImg from "../../assets/images/privateImg.svg";
 import eye from "../../assets/images/eye.svg";
 import money from "../../assets/images/money.svg";
@@ -24,8 +24,8 @@ export const Account = () => {
       <h2>Account</h2>
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Available Balance
-        <span>
-          <Icon src={money} alt="Balance icon" />
+        <span style={{ padding: "0 10px" }}>
+          <ThemeIcon src={money} alt="Balance icon" />
         </span>
         {/* Show balance only if toggleState is true */}
         {toggleState ? (

@@ -6,6 +6,10 @@ export const Icon = styled.img`
   width: 25px;
 `;
 
+export const ThemeIcon = styled(Icon)`
+  filter: ${({ theme }) => theme.filter};
+`;
+
 export const Btn = styled.button`
   margin: 15px auto 0px auto;
   display: block;
