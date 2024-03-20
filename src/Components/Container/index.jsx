@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Title } from "../Title";
 import { Account } from "../Account";
 import { backgroundLight } from "../UI/variables";
+import { List } from "../List";
 
 const StyledContainer = styled.div`
   background-color: ${backgroundLight};
@@ -24,7 +25,7 @@ export const Container = () => {
       <Title>Smart Bank</Title>
       <StyledContent>
         <Account />
-        <Account /> {/* Responsive */}
+        <List />
       </StyledContent>
     </StyledContainer>
   );

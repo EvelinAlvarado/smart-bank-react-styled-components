@@ -23,7 +23,8 @@ const BtnHeader = styled.a`
   margin: 0 10px;
   font-weight: 600;
   border: 2px solid white;
-  color: ${(props) => (props.primaryBtn ? "white" : primaryColor)};
+  /* color: ${(props) => (props.primaryBtn ? "white" : primaryColor)}; */
+  color: ${({ primaryBtn }) => (primaryBtn ? "white" : primaryColor)};
   background: ${({ primaryBtn }) =>
     primaryBtn ? "transparent" : "white"}; /* Destructuring */
 `;
