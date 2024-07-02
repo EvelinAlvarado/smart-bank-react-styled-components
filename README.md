@@ -9,3 +9,39 @@
   <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white">
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
 </div>
+
+## Description
+
+This project is a Smart Bank app developed as part of the React course at Alura Latam. The app features a variety of functionalities including viewing account balance, expenses, and toggling themes.
+
+## Key Features
+
+- **View Account Balance**: Display the available account balance.
+- **View Expenses**: List of recent expenses categorized by type.
+- **Theme Toggle**: Switch between light and dark themes.
+
+## Screenshots
+
+<div align="center" >
+  <img src="public/MacBook Pro-1716978240990.jpeg" width="80%" />
+  <br/><br/>
+  <img src="public/iPad-1716978330293.jpeg" width="40%" /> 
+   <br/><br/>
+  <img src="public/iPhone 12 Pro-1716978317349.jpeg" width="20%" /> 
+</div>
+
+## Additional Information
+
+- This project was part of the React course on Alura Latam.
+- Developed by Evelin Alvarado.
+- Find me on [GitHub](https://github.com/EvelinAlvarado) and [LinkedIn](https://www.linkedin.com/in/evelinalvarado/).
+
+Check out the live project: [Smart Bank](https://smart-bank-react-styled-components.vercel.app/)
+
+### Dependencies
+
+- `styled-components`: Utilized for styling React components in a modular and reusable way.
+
+## Objective
+
+The primary objective of this project is to learn and practice `styled-components` for styling in React, alongside enhancing skills in React and JavaScript.
